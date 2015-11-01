@@ -86,6 +86,11 @@ public class BurndownBOTest {
 	}
 	
 	@Test
+	public void testGerarBurndownHoras() {
+		new BurndownBO().gerarBurndownHoras(this.sprint1);
+	}
+	
+	@Test
 	public void testGerarBurndownPontos() throws ParseException {
 		// Cobertura de comandos e branches (geraEixoXYPontos) e teste blackbox
 		Map<Date,Integer> eixoXY1 = new BurndownBO().gerarBurndownPontos(criaSprint("08/09/2014", 7));
