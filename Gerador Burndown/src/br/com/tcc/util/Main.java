@@ -81,17 +81,20 @@ public class Main {
 		item5.setTempoGasto(3);
 		item5.setData(DataUtil.converteStringParaDate("11/09/2014"));
 		
-
 		ItemHistorico item6 = new ItemHistorico();
 		item6.setCodEstoria(3);
 		item6.setTempoGasto(2);
 		item6.setData(DataUtil.converteStringParaDate("11/09/2014"));
 		
-
 		ItemHistorico item7 = new ItemHistorico();
 		item7.setCodEstoria(1);
 		item7.setTempoGasto(6);
 		item7.setData(DataUtil.converteStringParaDate("09/09/2014"));
+		
+		ItemHistorico item8 = new ItemHistorico();
+		item8.setCodEstoria(1);
+		item8.setTempoGasto(0);
+		item8.setData(DataUtil.converteStringParaDate("09/09/2014"));
 		
 		List<ItemHistorico> itens = new ArrayList<ItemHistorico>();
 		itens.add(item);
@@ -101,6 +104,7 @@ public class Main {
 		itens.add(item5);
 		itens.add(item6);
 		itens.add(item7);
+		itens.add(item8);
 		
 		return itens;
 	}
@@ -132,6 +136,7 @@ public class Main {
 		est4.setTempoEstimado(88);
 		est4.setCodEstoria(4);
 		est4.setQtdePontos(8);
+
 		
 		estorias.add(est1);
 		estorias.add(est2);

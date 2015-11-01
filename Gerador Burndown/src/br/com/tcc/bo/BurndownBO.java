@@ -163,16 +163,13 @@ public class BurndownBO {
 		return qtdeHorasConsumidas;
 	}
 
-
 	public void setQtdeHorasConsumidas(double qtdeHorasConsumidas) {
 		this.qtdeHorasConsumidas = qtdeHorasConsumidas;
 	}
 
-
 	public double getConsumoDiarioIdeal() {
 		return consumoDiarioIdeal;
 	}
-
 
 	public void setConsumoDiarioIdeal(double consumoDiarioIdeal) {
 		this.consumoDiarioIdeal = consumoDiarioIdeal;
