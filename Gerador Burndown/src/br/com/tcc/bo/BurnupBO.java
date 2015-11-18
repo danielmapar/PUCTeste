@@ -2,12 +2,14 @@ package br.com.tcc.bo;
 
 public class BurnupBO {
 	
+	private double qtdeHorasRestantes;
+	
 	public double getQtdeHorasRestantes() {
-		return 0;
+		return qtdeHorasRestantes;
 	}
 
 	public void setQtdeHorasRestantes(double qtdeHorasRestantes) {
-		
+		this.qtdeHorasRestantes = qtdeHorasRestantes;
 	}
-			
+	
 }
