@@ -3,6 +3,7 @@ package br.com.tcc.bo;
 public class BurnupBO {
 	
 	private double qtdeHorasRestantes;
+	private double totalHoras;
 	
 	public double getQtdeHorasRestantes() {
 		return qtdeHorasRestantes;
@@ -13,11 +14,11 @@ public class BurnupBO {
 	}
 	
 	public double getTotalHoras() {
-		return 0;
+		return totalHoras;
 	}
 
 	public void setTotalHoras(double totalHoras) {
-	
+		this.totalHoras = totalHoras;
 	}
 	
 }
