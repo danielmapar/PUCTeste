@@ -25,8 +25,7 @@ public class DataUtilTest {
         assertEquals(null, DataUtil.converteStringParaDate(""));
         try {
         	DataUtil.converteStringParaDate("1121221");
-        }
-        catch (ParseException e) {
+        } catch (ParseException e) {
         	assertEquals("Unparseable date: \"1121221\"", e.getMessage());
         }  
        
