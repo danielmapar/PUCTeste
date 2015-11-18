@@ -12,4 +12,12 @@ public class BurnupBO {
 		this.qtdeHorasRestantes = qtdeHorasRestantes;
 	}
 	
+	public double getTotalHoras() {
+		return 0;
+	}
+
+	public void setTotalHoras(double totalHoras) {
+	
+	}
+	
 }
