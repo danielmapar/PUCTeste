@@ -12,5 +12,12 @@ public class BurnupBOTest {
 		burnupBO.setQtdeHorasRestantes(10);
 		assertEquals((Double)10.00, (Double) burnupBO.getQtdeHorasRestantes());
 	}
+	
+	@Test
+	public void testTotalHoras() {
+		BurnupBO burnupBO = new BurnupBO();
+		burnupBO.setTotalHoras(10);
+		assertEquals((Double)10.00, (Double) burnupBO.getTotalHoras());
+	}
 
 }
