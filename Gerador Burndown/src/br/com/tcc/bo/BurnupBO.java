@@ -30,4 +30,12 @@ public class BurnupBO {
 		this.qtdeHorasConsumidas = qtdeHorasConsumidas;
 	}
 	
+	public double getConsumoDiarioIdeal() {
+		return 0;
+	}
+
+	public void setConsumoDiarioIdeal(double consumoDiarioIdeal) {
+		
+	}
+	
 }
