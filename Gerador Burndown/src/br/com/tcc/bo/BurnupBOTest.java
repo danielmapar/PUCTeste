@@ -3,8 +3,6 @@ package br.com.tcc.bo;
 import static org.junit.Assert.assertEquals;
 
 import java.text.ParseException;
-import java.util.Date;
-import java.util.Map;
 
 import org.junit.After;
 import org.junit.Before;

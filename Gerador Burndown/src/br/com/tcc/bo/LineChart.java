@@ -15,7 +15,21 @@ import br.com.tcc.util.DataUtil;
 public class LineChart extends JFrame {
 
 	private static final long serialVersionUID = 1L;
-
+	
+	public LineChart(String applicationTitle, String chartTitle, Map<Date,Double> grafico, Double totalHoras) {
+		
+		super(applicationTitle);
+		// based on the dataset we create the chart
+		JFreeChart chart = createChart(chartTitle, grafico, totalHoras);
+	    // we put the chart into a panel
+	    ChartPanel chartPanel = new ChartPanel(chart);
+	    // default size
+	        
+	    chartPanel.setPreferredSize(new java.awt.Dimension(800, 370));
+	    // add it to our application
+	    setContentPane(chartPanel);
+	}
+	
 	public LineChart(String applicationTitle, String chartTitle, Map<Date,Double> grafico, Double totalHoras, Double queimaDiariaIdeal) {
 		
 		super(applicationTitle);
@@ -43,7 +57,29 @@ public class LineChart extends JFrame {
 		// add it to our application
 		setContentPane(chartPanel);
 	}
-	  
+	
+	//Creates a chart
+	private JFreeChart createChart(String title, Map<Date,Double> grafico, Double totalHoras) {
+	        
+		Double totalHorasIdeal = totalHoras;
+	    	
+		DefaultCategoryDataset ds = new DefaultCategoryDataset();
+	    	
+		for (Date data : grafico.keySet()) {
+			if (grafico.get(data) != null){
+				totalHoras = totalHoras - grafico.get(data);
+				ds.addValue(totalHoras, "completed", DataUtil.dateToString(data));
+			}
+			else{
+				ds.addValue(null, "completed", DataUtil.dateToString(data));
+			}
+			ds.addValue(totalHorasIdeal, "total", DataUtil.dateToString(data));
+		}
+		JFreeChart chart = ChartFactory.createLineChart(title, "Date", "Hours", ds);
+
+		return chart;
+	}
+	
 	//Creates a chart
 	private JFreeChart createChart(String title, Map<Date,Double> grafico, Double totalHoras, Double queimaDiariaIdeal) {
 	        

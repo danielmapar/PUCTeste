@@ -30,7 +30,7 @@ public class BurnupBO {
 		
 		setConsumoDiarioIdeal(totalHoras / sprint.getQtdeDias());
 		
-		LineChart demo = new LineChart("Comparison", TITLE_HORAS, eixoXY, totalHoras, consumoDiarioIdeal);
+		LineChart demo = new LineChart("Comparison", TITLE_HORAS, eixoXY, totalHoras);
         demo.pack();
         demo.setVisible(true);
 	}
