@@ -1,11 +1,26 @@
 package br.com.tcc.bo;
 
+import java.util.Date;
+import java.util.Map;
+
+import br.com.tcc.model.Sprint;
+
 public class BurnupBO {
 	
 	private double qtdeHorasRestantes;
 	private double totalHoras;
 	private double qtdeHorasConsumidas;
 	private double consumoDiarioIdeal;
+	
+	/**
+	 * @author daniel
+	 * @since 16/11/2015
+	 * @param sprint
+	 */
+	public void gerarBurnupHoras(Sprint sprint){
+		
+	
+	}
 	
 	public double getQtdeHorasRestantes() {
 		return qtdeHorasRestantes;
