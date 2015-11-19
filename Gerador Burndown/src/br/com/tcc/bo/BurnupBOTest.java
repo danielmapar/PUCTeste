@@ -26,5 +26,13 @@ public class BurnupBOTest {
 		burnupBO.setQtdeHorasConsumidas(10);
 		assertEquals((Double)10.00, (Double) burnupBO.getQtdeHorasConsumidas());
 	}
+	
+	@Test
+	public void testConsumoDiarioIdeal() {
+		BurnupBO burnupBO = new BurnupBO();
+		burnupBO.setConsumoDiarioIdeal(10);
+		assertEquals((Double)10.00, (Double) burnupBO.getConsumoDiarioIdeal());
+	}
+	
 
 }
