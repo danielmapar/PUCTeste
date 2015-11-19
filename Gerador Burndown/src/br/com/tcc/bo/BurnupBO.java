@@ -4,6 +4,7 @@ public class BurnupBO {
 	
 	private double qtdeHorasRestantes;
 	private double totalHoras;
+	private double qtdeHorasConsumidas;
 	
 	public double getQtdeHorasRestantes() {
 		return qtdeHorasRestantes;
@@ -22,11 +23,11 @@ public class BurnupBO {
 	}
 	
 	public double getQtdeHorasConsumidas() {
-		return 0;
+		return qtdeHorasConsumidas;
 	}
 
 	public void setQtdeHorasConsumidas(double qtdeHorasConsumidas) {
-		
+		this.qtdeHorasConsumidas = qtdeHorasConsumidas;
 	}
 	
 }
